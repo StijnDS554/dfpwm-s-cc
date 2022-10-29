@@ -3,7 +3,7 @@ local dfpwm = require("cc.audio.dfpwm")
 local speaker = peripheral.find("speaker")
 local count = 0
 while true do
-    local players = playerDetector.getPlayersInRange(15)
+    local players = playerDetector.getPlayersInRange(10)
     for index, value in ipairs(players) do
         if value == "Quigybobo" or value == "exofl4me" then
             local lastOnline = os.epoch()
