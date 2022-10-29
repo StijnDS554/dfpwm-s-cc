@@ -6,7 +6,7 @@ while true do
     local players = playerDetector.getPlayersInRange(5)
     for index, value in ipairs(players) do
         if value == "Quigybobo" or value == "exofl4me" then
-            local lastOnline = os.epoch()
+            print(value)
             local decoder = dfpwm.make_decoder()
             for chunk in io.lines("rickroll.dfpwm", 16 * 1024) do
                 local buffer = decoder(chunk)
