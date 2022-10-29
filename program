@@ -2,7 +2,7 @@ local playerDetector = peripheral.find("playerDetector")
 local dfpwm = require("cc.audio.dfpwm")
 local speaker = peripheral.find("speaker")
 local count = 0
-while true do
+while count <= 5 do
     local players = playerDetector.getPlayersInRange(5)
     for index, value in ipairs(players) do
         if value == "Quigybobo" or value == "exofl4me" then
@@ -18,7 +18,7 @@ while true do
 
         end
     end
+count = count+1
 
-
-    os.sleep(0.4)
+    os.sleep(10)
 end
