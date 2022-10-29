@@ -4,7 +4,7 @@ local speaker = peripheral.find("speaker")
 local count = 0
 while true do
 
-    if playerDetector.isPlayerInRange(15, "Quigybobo") then
+    if playerDetector.isPlayerInRange(15, "exofl4me") then
         local lastOnline = os.epoch()
         local decoder = dfpwm.make_decoder()
         for chunk in io.lines("rickroll.dfpwm", 16 * 1024) do
