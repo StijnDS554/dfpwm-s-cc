@@ -5,7 +5,7 @@ local count = 0
 while count <= 5 do
     local players = playerDetector.getPlayersInRange(5)
     for index, value in ipairs(players) do
-        if value == "Quigybobo" or value == "exofl4me" then
+        if value == "Quigybobo" or value == "chxrlxtxn" then
             print(value)
             local decoder = dfpwm.make_decoder()
             for chunk in io.lines("rickroll.dfpwm", 16 * 1024) do
